@@ -29,7 +29,7 @@ def y_predict():
     if(output==1):
         pred="Your are safe!!  This is a Legitimate Website."
         
-    else:
+    elif(output==-1):
         pred="You are on the wrong site. Be cautious!"
     return render_template('final.html', prediction_text='{}'.format(pred),url=url)
 
